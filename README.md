@@ -1,1 +1,5 @@
-# 400B_fauzi
+
+#400B_fauzi
+
+#ASTR400B Spring 2020
+
