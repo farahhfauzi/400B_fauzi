@@ -1,1 +1,29 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
 
+\title{Research Assignment 1}
+\author{Farah Fauzi }
+\date{February 2020}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\begin{document}
+
+\maketitle
+
+\section{Research Topic Heading}
+Galaxy Merger Sequence of MW and/or M31: baryonic evolution through close encounters
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1.7]{universe}
+\caption{The Galaxy}
+\label{fig:universe}
+\end{figure}
+
+\section{Specific Research Question(s)}
+how does the stellar density profile of the disk evolve (disk and/or bulge)?
+
+
+\end{document}
