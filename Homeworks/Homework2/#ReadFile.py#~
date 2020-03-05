@@ -1,0 +1,8 @@
+import numpy as np
+import astropy.units as u
+
+def Read(ReadFile):
+    file = open(filename,'r')
+    line1 = file.readline()
+    label, value = line.split()
+    time = float(value)*u.Myr
