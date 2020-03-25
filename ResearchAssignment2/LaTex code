@@ -1,0 +1,88 @@
+\documentclass{aastex63}
+
+\usepackage{graphicx}
+\usepackage{txfonts}
+
+\newcommand{\vdag}{(v)^\dagger}
+\newcommand\aastex{AAS\TeX}
+\newcommand\latex{La\TeX}
+
+\shorttitle{doc}
+\shortauthors{Farah I. Fauzi}
+          
+
+\begin{document}
+
+%\title{Galaxy Merger Sequence}
+
+%\subtitle{I. Evolution of the MW Main Stellar Body throughout the Merger Sequence (prior to coalescence)}
+\title{%
+    \large Galaxy Merger Sequence: \\
+     Evolution of the MW Main Stellar Body  \\
+     throughout the Merger Sequence}
+\author{Farah Fauzi}
+   
+
+\section{Introduction}
+
+In general, galaxies evolve over time as a result of the gases in the galaxy been used up. One way it demonstrates the evolution of a galaxy is in the formation of new stars. Milky Way (MW) is a typical barred spiral galaxy and constantly forming new stars within its arms \citep{Hubble36}. The closest massive galaxy in the Local Group next to it is the Andromeda galaxy (M31), which is also a spiral. M31 is approximately 2.5 billion light-years or approximately 769.0 kilo-parsec away from us and predicted to head for a collision in about 3.75 billions years from now with the Milky Way \citep{vdm12} and another 2 billion years to completely merged together (coalescence). In that course of time, both of these galaxies have already evolved into a red spiral galaxies as forming stars takes up a lot of its gas in each of the galaxy, stopping them from forming any new stars. \\
+
+\begin{figure*}[hbt!]
+   \centering
+   \includegraphics[width=4in]{merger.JPG}
+   \caption{\small credits: NASA, ESA, Z. Levay (STScI), and O. Mellinger. Milky Way and Andromeda galaxy in the head on          collision with each other.}
+              \label{FigGam1}%
+\end{figure*}\\
+
+
+This merger definitely will affect the density of the galaxies before and after coalescence. Major merger can change the composition structure of the gas poor evolved MW entirely \citep{S015} in which results in changes to the stellar disk density of the remnant to be decreased. The best way to study the changes on the density profile of merger is through the cosmological simulations and observation \citep{bac16}. It is shown that the mass of the components of the stellar body evolving in which it can be expressed from the enclosed of each components in the MW galaxy.
+
+In this paper, we want to investigate the evolution of MW spiral galaxy where we take account of its stellar disk by looking at its density profile as it is making its way to combine with the M31 prior to the merging of components to form a whole new class of a galaxy. We want to study if the disk density will be increased or decreased from its progenitor. We can also look at how the mass changes as both of the galaxies merging. 
+
+\section{Method}
+%Sersic Profile
+The sérsic profile has the form of $\ln I(R) = \ln I_0 - kR^{1/n}$, where $I_0$ is the intensity at the center, $n$ is the degree of curvature of the profile in which $n=1$ is a great approximation for MW spiral galaxy, showing that it is less concentrated at the center. It will create an exponential profile by which the relation between the intensity and the radii be $I(R) \sim \e^{-bR}$ where $b = 2n - 1/3$. Sérsic profiles can also be used to describe dark matter halos, where the Sérsic index correlates with halo mass.
+
+%approach
+We will calculate the mass enclosed within a given radius of the center of mass position for Milky Way over time before we measure the density. First, we will need to find the total mass of the stellar disk of the Milky Way (Homework 3). Then, we will find the 3D coordinates of the center of mass position of the MW by using the formula given below
+\begin{equation}
+    X_{\mathrm{COM}} = \frac{\sum x_i m_i}{\sum m_i} \,,
+\end{equation}
+to compute the center of mass position for multiple snapshots (Homework 4). After that, we could  calculate the mass enclosed of the stellar disks in a range of radius away from the calculated center of mass (Homework 5). We will be using the Hernquist Density Profile to compute the density in the remnant using
+\begin{equation}
+    \rho(r) = \frac{Ma}{2 \pi r} \frac{1}{(r+a)^3} \,.
+\end{equation}
+
+Here is the bulge-lense-disc decomposition of a merger from \cite{S015}. 
+
+\begin{figure*}[hbt!]
+   \centering
+   \includegraphics[width=3.5in]{density remnant.JPG}
+   \caption{\citep{S015}. Blue-dashed line is the fitted disc decomposition performed to an S0-like remnant with n          $\sim$ 1 bulge using a model galaxy (gSbgSbo9). The red-dashed line is the fitted bulge and the green          dashed line is the fitted lense component. 
+                }
+              \label{FigGam}%
+\end{figure*}
+
+From the figure, we can see that the disk decomposition is decreasing as it is going away from the center. This shows that the surface brightness of the stellar disc of the remnant contains residual star formation in it. 
+
+
+\section{hypothesis}
+The density profile of the MW stellar disk follows the sérsic profile with steep logarithmic slope at larger radii using n $\sim$ 1 for spiral galaxy. The changes that happened over time on the profile show that the mass and density of the galaxy is less concentrated compare to the one before MW and M31 merged (assumption).
+
+
+\bibliography{Reference}{}
+\bibliographystyle{aasjournal}
+
+\end{document}
+
+
+%%SOURCES
+%https://arxiv.org/pdf/1205.6865.pdf - M31 velocity vector
+%https://www.aanda.org/articles/aa/pdf/2015/01/aa24303-14.pdf - S0 galaxies merger
+%https://arxiv.org/pdf/1511.04095.pdf - Bulge Formation via Mergers in Cosmological Simulation
+%https://arxiv.org/ftp/arxiv/papers/1110/1110.2445.pdf - hubble
+%https://research-repository.st-andrews.ac.uk/handle/10023/5836 - future fate of stellar mass
+%https://arxiv.org/pdf/1507.04746.pdf - from discs to bulges
+%https://www.space.com/19915-milky-way-galaxy.html - milky way facts
+%https://courses.physics.ucsd.edu/2019/Winter/physics141/midterm-final/JWithagenThesis.pdf - collision m31 mw
+    
