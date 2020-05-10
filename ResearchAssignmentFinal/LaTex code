@@ -1,0 +1,86 @@
+\documentclass{aastex63}
+
+\usepackage{graphicx}
+\usepackage{txfonts}
+
+\newcommand{\vdag}{(v)^\dagger}
+\newcommand\aastex{AAS\TeX}
+\newcommand\latex{La\TeX}
+
+\shorttitle{doc}
+\shortauthors{Farah I. Fauzi}
+          
+
+\begin{document}
+
+\title{%
+    \large Galaxy Merger Sequence: \\
+     Evolution of the MW Main Stellar Body  \\
+     throughout the Merger Sequence}
+\author{Farah Fauzi}
+\received{10 May, 2020}
+
+\section{Introduction}
+
+In general, evolution of the ... over time as a result of gas depletion within the galaxy. One way in which gas is depleted is through star formation. Milky Way (MW) is a typical SBc barred spiral galaxy and constantly forming 4 new stars every year within its arms \citep{Hubble36}. The closest massive galaxy in the Local Group next to it is the Andromeda galaxy (M31), which is also a spiral galaxy. According to Hubble Galaxy specification scheme, M31 is classified as SA(s)b galaxy classification. M31 is approximately 2.5 billion light-years or approximately 769.0 kilo-parsec away from us and predicted to head for a collision in about 3.75 billions years from now with the Milky Way \citep{vdm12}, where Figure 1 demonstrate how both of the galaxy would look like in the process of merging. It would take another 2 billion years for MW and M31 to completely merge together or coalescence. In that course of time, both of these galaxies have already evolved into a green valley, which includes the red spiral galaxies as forming stars takes up a lot of its gas in each of the galaxy, stopping them from forming any new stars. \\
+
+\begin{figure*}[hbt!]
+   \centering
+   \includegraphics[width=4in]{merger.JPG}
+   \caption{\small credits: NASA, ESA, Z. Levay (STScI), and O. Mellinger. Milky Way and Andromeda galaxy in the head on          collision with each other.}
+              \label{FigGam1}%
+\end{figure*}\\
+
+Galaxy mergers strongly impact the gas and stellar density profiles of the galaxies before and after coalescence. Major merger can change the composition structure of the gas poor evolved MW entirely \citep{S015} in which causing the stellar disk density of the remnant to be increased. It happens when two galaxies with almost the same mass and small velocities headed towards each other, whether as close encounter or a head on collision. One of the ways to study the changes on the density profile of galaxies during mergers is using the cosmological simulations and comparing to observations \citep{bac16}. 
+
+In this paper, we want to investigate the evolution of MW spiral galaxy where we take account of its stellar disk by looking at its density profile as it is making its way to combine with the M31 prior to the merging of components to form a different class of a galaxy, probably will form an elliptical one \citep{vdm12}. We want to study if the disk density will be increased or decreased relative to progenitor. If the stellar density happens to be increasing, we can assume that the gas density would actually goes up as well. This would result in increasing star formation rate of the galaxies, according to the Kennicutt-Schmidt relation. We can also look at how the mass changes as both of the galaxies merging. 
+
+\section{Method}
+%Sersic Profile
+The sérsic profile has the form of $\ln I(R) = \ln I_0 - kR^{1/n}$, where $I_0$ is the intensity at the center, $n$ is the degree of curvature of the profile in which $n=1$ is a great approximation for MW spiral galaxy, showing that it is less concentrated at the center. It will create an exponential profile by which the relation between the intensity and the radii be $I(R) \sim \e^{-bR}$ where $b = 2n - 1/3$. Sérsic profiles can also be used to describe dark matter halos, where the Sérsic index correlates with halo mass of elliptical galaxies.
+
+%approach
+We will calculate the mass enclosed of the stellar disk within a given radius of the center of mass position for Milky Way over time before we measure the density. First, we will need to find the total mass of the stellar disk of the Milky Way (Homework 3). Then, we will find the 3D coordinates of the center of mass position of the MW by using the formula given below
+\begin{equation}
+    X_{\mathrm{COM}} = \frac{\sum x_i m_i}{\sum m_i} \,,
+\end{equation}
+to compute the center of mass position for multiple snapshots (Homework 4). After that, we could  calculate the mass enclosed of the stellar disks in a range of radius away from the calculated center of mass (Homework 5). We will be using the Hernquist Density Profile to compute the density in the remnant using
+\begin{equation}
+    \rho(r) = \frac{Ma}{2 \pi r} \frac{1}{(r+a)^3} \,.
+\end{equation}
+
+Here \ref{fig:Bulge-disk-plot} is the bulge-lense-disc decomposition of a merger from \cite{S015}. 
+
+\begin{figure*}[hbt!]
+   \centering
+   \includegraphics[width=3.5in]{density remnant.JPG}
+   \caption{\label{fig:Bulge-disk-plot}
+   \citep{S015}. Blue-dashed line is the fitted disc decomposition performed to an S0-like remnant with n          $\sim$ 1 bulge using a model galaxy (gSbgSbo9). The red-dashed line is the fitted bulge and the green          dashed line is the fitted lense component. 
+                }
+              \label{FigGam}%
+\end{figure*}
+
+From the figure, we can see that the disk decomposition is decreasing as it is going away from the center. We can assume that the gas density profile will act similarly to the way of that the density profile of the stellar disk does. This way, we can estimate the rate of the star formation might be increasing. 
+
+
+\section{hypothesis}
+The density profile of the MW stellar disk follows the sérsic profile with steep logarithmic slope at larger radii using n $\sim$ 1 for spiral galaxy. The changes that happened over time on the profile show that the mass and density of the galaxy is less concentrated compare to the one before MW and M31 merged (assumption).
+
+
+\bibliography{Reference}{}
+\bibliographystyle{aasjournal}
+
+\end{document}
+
+
+%%SOURCES
+%https://arxiv.org/pdf/1205.6865.pdf - M31 velocity vector
+%https://www.aanda.org/articles/aa/pdf/2015/01/aa24303-14.pdf - S0 galaxies merger
+%https://arxiv.org/pdf/1511.04095.pdf - Bulge Formation via Mergers in Cosmological Simulation
+%https://arxiv.org/ftp/arxiv/papers/1110/1110.2445.pdf - hubble
+%https://research-repository.st-andrews.ac.uk/handle/10023/5836 - future fate of stellar mass
+%https://arxiv.org/pdf/1507.04746.pdf - from discs to bulges
+%https://www.space.com/19915-milky-way-galaxy.html - milky way facts
+%https://courses.physics.ucsd.edu/2019/Winter/physics141/midterm-final/JWithagenThesis.pdf - collision m31 mw
+%http://assets.zombal.com/03a5cab4/GalaxyDensity.pdf - Galaxy Density
+%https://www.astro.umd.edu/~richard/ASTRO620/MW_Disk_review_Rix_Bovy.pdf - stellar disk
